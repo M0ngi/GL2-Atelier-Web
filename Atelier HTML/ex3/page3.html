@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center><h3>Inscription en license</h3></center>
+
+        <form>
+            <fieldset>
+                <legend>Information personel</legend>
+
+                <table align="center">
+                    <tr>
+                        <td>Votre nom</td>
+                        <td><input name="nom" /></td>
+                    </tr>
+                    <tr>
+                        <td>Votre prenom</td>
+                        <td><input name="prenom" /></td>
+                    </tr>
+                    <tr>
+                        <td>Votre age</td>
+                        <td><input name="age" type="number" /></td>
+                    </tr>
+                    <tr>
+                        <td>Votre adr</td>
+                        <td><textarea name="adr"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Votre mot de pass</td>
+                        <td><input name="password" required/></td>
+                    </tr>
+                    <tr>
+                        <td>Repeter votre mot de passe</td>
+                        <td><input name="password" required/></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Gestion des grps et options</legend>
+
+                <table align="center">
+                    <tr>
+                        <td>Votre grp</td>
+                        <td>
+                            <input name="grp" type="radio">Group 1
+                            <input name="grp" type="radio">Group 2
+                            <input name="grp" type="radio">Group 3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Num cart d'etudiant</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Choisisez</td>
+                        <td><select name="opt">
+                            <option value=0>Flex</option>
+                            <option value=1>HTML</option>
+                            <option value=2>Android</option>
+                        </select></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
