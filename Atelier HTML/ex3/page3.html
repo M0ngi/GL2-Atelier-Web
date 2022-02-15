@@ -6,7 +6,7 @@
     <body>
         <center><h3>Inscription en license</h3></center>
 
-        <form>
+        <form method="POST" action="./page4.html">
             <fieldset>
                 <legend>Information personel</legend>
 
@@ -28,18 +28,20 @@
                         <td><textarea name="adr"></textarea></td>
                     </tr>
                     <tr>
+                        <td>Votre date de naissance</td>
+                        <td><input type="date" /></td>
+                    </tr>
+                    <tr>
                         <td>Votre mot de pass</td>
-                        <td><input name="password" required/></td>
+                        <td><input type="password" name="password" required/></td>
                     </tr>
                     <tr>
                         <td>Repeter votre mot de passe</td>
-                        <td><input name="password" required/></td>
+                        <td><input type="password" name="password" required/></td>
                     </tr>
                 </table>
             </fieldset>
-        </form>
 
-        <form>
             <fieldset>
                 <legend>Gestion des grps et options</legend>
 
@@ -66,6 +68,15 @@
                     </tr>
                 </table>
             </fieldset>
+
+            <br>
+
+            Verification ("INSAT" + 4 chiffres): <input type="text" pattern="[I][N][S][A][T][0-9]{4}"/>
+
+            <center>
+                <button type="submit">Valider</button>&nbsp;&nbsp;
+                <button type="reset">Reinitialiser</button>
+            </center>
         </form>
     </body>
 </html>
